@@ -13,7 +13,7 @@ data_form <- function(file_path){
   # get high level data #
   folder_names = list.files(file_path, full.names = T)
   
-  folder_names = folder_names[-c(grep("trelliscope.R", folder_names), grep("Dockerfile", folder_names))]
+  #folder_names = folder_names[-c(grep("trelliscope.R", folder_names), grep("Dockerfile", folder_names))]
   # gather data for each subject #
   myair_fulldata = lapply(folder_names, function(x){
     samp_info = unlist(lapply(strsplit(x, "/"), function(x) x[length(x)]))
