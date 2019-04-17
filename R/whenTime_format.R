@@ -42,5 +42,5 @@ whenTime_format <- function(time_vector){
   res1 = paste(temp_year, temp_month_num, temp_day, sep = "/")
   res2 = paste(res1, temp_time)
   
-  as.POSIXlt(res2)
+  as.POSIXct(res2)
 }
