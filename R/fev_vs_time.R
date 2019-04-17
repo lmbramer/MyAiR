@@ -13,7 +13,7 @@
 fev1_vs_time <- function(spiro_data){
   
   # check that the needed columns are present #
-  if(sum(c("fev1", "when_time", "Sample_Info", "when_date") %in% names(spiro_data)) != 4) stop("Data does not have the minimum required columns to make plot")
+  #if(sum(c("fev1", "when_time", "Sample_Info", "when_date") %in% names(spiro_data)) != 4) stop("Data does not have the minimum required columns to make plot")
   
   # check to see how many subjects there are #
   num_subjs = length(unique(spiro_data$Sample_Info))
